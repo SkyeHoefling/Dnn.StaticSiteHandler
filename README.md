@@ -11,7 +11,8 @@ This module was built specifically to allow DocFX to be hosted inside of a DNN S
 # Getting Started
 
 
-# Supports DNN (Formerly DotNetNuke)⚡🤚 was originally built for DNN 9.4 but does not leverage any new 9.x or 9.4.x features. The extension should work on any version of DNN that support HTTP Handlers. Below is a table of versions of DNN that it has been tested on and confirmed working
+# Supports DNN (Formerly DotNetNuke)
+⚡🤚 was originally built for DNN 9.4 but does not leverage any new 9.x or 9.4.x features. The extension should work on any version of DNN that support HTTP Handlers. Below is a table of versions of DNN that it has been tested on and confirmed working
 
 | ⚡ Static Site ⚡ Handler 🤚 | DNN (DotNetNuke) | Supported |
 |-------------------------------|------------------|-----------|
