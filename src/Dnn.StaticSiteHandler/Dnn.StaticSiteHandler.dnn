@@ -16,6 +16,11 @@
       <azureCompatible>true</azureCompatible>
 
       <components>
+        <component type="Config">
+          <config>
+          </config>
+        </component>
+
         <component type="Assembly">
           <assemblies>
           <assembly>
