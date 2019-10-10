@@ -18,6 +18,35 @@
       <components>
         <component type="Config">
           <config>
+            <configFile>web.config</configFile>
+            <install>
+              <configuration>
+                <nodes>
+                  <node path="/configuration/system.webServer/handlers" action="update" key="name" collision="overwrite">
+                    <add name="HtmlStaticSiteHandler" path="*.html.axd" verb="*" type="Dnn.StaticSiteHandler.HtmlServerHandler, Dnn.StaticSiteHandler" preCondition="integratedMode" />
+                    <add name="JsStaticSiteHandler" path="*.js.axd" verb="*" type="Dnn.StaticSiteHandler.HtmlServerHandler, Dnn.StaticSiteHandler" preCondition="integratedMode" />
+                    <add name="CssStaticSiteHandler" path="*.css.axd" verb="*" type="Dnn.StaticSiteHandler.HtmlServerHandler, Dnn.StaticSiteHandler" preCondition="integratedMode" />
+                    <add name="SvgStaticSiteHandler" path="*.svg.axd" verb="*" type="Dnn.StaticSiteHandler.HtmlServerHandler, Dnn.StaticSiteHandler" preCondition="integratedMode" />
+                    <add name="WoffStaticSiteHandler" path="*.woff.axd" verb="*" type="Dnn.StaticSiteHandler.HtmlServerHandler, Dnn.StaticSiteHandler" preCondition="integratedMode" />
+                    <add name="Woff2StaticSiteHandler" path="*.Woff2.axd" verb="*" type="Dnn.StaticSiteHandler.HtmlServerHandler, Dnn.StaticSiteHandler" preCondition="integratedMode" />
+                    <add name="TtfStaticSiteHandler" path="*.ttfs.axd" verb="*" type="Dnn.StaticSiteHandler.HtmlServerHandler, Dnn.StaticSiteHandler" preCondition="integratedMode" />
+                  </node>
+                </nodes>
+              </configuration>
+            </install>
+            <uninstall>
+              <configuration>
+                <nodes>
+                  <node path="/configuration/system.webServer/handlers/add[@name='HtmlStaticSiteHandler']" action="remove" />
+                  <node path="/configuration/system.webServer/handlers/add[@name='JsStaticSiteHandler']" action="remove" />
+                  <node path="/configuration/system.webServer/handlers/add[@name='CssStaticSiteHandler']" action="remove" />
+                  <node path="/configuration/system.webServer/handlers/add[@name='SvgStaticSiteHandler']" action="remove" />
+                  <node path="/configuration/system.webServer/handlers/add[@name='WoffStaticSiteHandler']" action="remove" />
+                  <node path="/configuration/system.webServer/handlers/add[@name='Woff2StaticSiteHandler']" action="remove" />
+                  <node path="/configuration/system.webServer/handlers/add[@name='TtfStaticSiteHandler']" action="remove" />
+                </nodes>
+              </configuration>
+            </uninstall>
           </config>
         </component>
 
