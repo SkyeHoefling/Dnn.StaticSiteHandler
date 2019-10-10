@@ -1,31 +1,28 @@
-﻿<dotnetnuke type="Package" version="5.0">
+﻿<dotnetnuke type="Package" version="8.0">
   <packages>
-    <package name="Dnn.StaticSiteHandler" type="Module" version="00.00.17">
+    <package name="Dnn.StaticSiteHandler" type="Provider" version="00.00.01">
       <friendlyName>⚡ Static Site ⚡ Handler 🤚</friendlyName>
       <description>A Static Site Handler that secures HTML websites inside secured DNN folders using the DNN Permission system.</description>
-      <iconFile>Images\extension.png</iconFile>
+
       <owner>
         <name>Andrew Hoefling</name>
         <organization>Andrew Hoefling</organization>
         <url>http://www.andrewhoefling.com</url>
         <email>andrew@hoefling.me</email>
       </owner>
-      <license src="ManifestAssets\License.txt"></license>
-      <releaseNotes src="ManifestAssets\ReleaseNotes.txt"></releaseNotes>
-      <dependencies>
-        <dependency type="CoreVersion">06.00.00</dependency>
-      </dependencies>
-      <components>
+      
+      <license>sample</license>
+      <releaseNotes>sample</releaseNotes>
+      <azureCompatible>true</azureCompatible>
 
+      <components>
         <component type="Assembly">
           <assemblies>
-            <basePath>bin</basePath>
-            <assembly>
+          <assembly>
               <name>Dnn.StaticSiteHandler.dll</name>
             </assembly>
           </assemblies>
         </component>
-
       </components>
     </package>
   </packages>
