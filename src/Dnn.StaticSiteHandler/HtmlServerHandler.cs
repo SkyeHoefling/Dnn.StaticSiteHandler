@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 
-namespace DnnStaticContent
+namespace Dnn.StaticSiteHandler
 {
     public class HtmlServerHandler : IHttpHandler
     {

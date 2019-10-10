@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DnnStaticContent", "DnnStaticContent\DnnStaticContent.csproj", "{0291D2FA-E891-47BF-A993-899274487393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dnn.StaticSiteHandler", "src\Dnn.StaticSiteHandler\Dnn.StaticSiteHandler.csproj", "{94CA4026-6973-4BC2-8062-1FA327A221AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0291D2FA-E891-47BF-A993-899274487393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0291D2FA-E891-47BF-A993-899274487393}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0291D2FA-E891-47BF-A993-899274487393}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0291D2FA-E891-47BF-A993-899274487393}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94CA4026-6973-4BC2-8062-1FA327A221AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94CA4026-6973-4BC2-8062-1FA327A221AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94CA4026-6973-4BC2-8062-1FA327A221AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94CA4026-6973-4BC2-8062-1FA327A221AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BB198215-99C1-4A36-8FD2-102DAF7E373F}
+		SolutionGuid = {63D8ABB3-294D-479A-9295-6D297DCB5938}
 	EndGlobalSection
 EndGlobal
