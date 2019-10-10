@@ -6,8 +6,6 @@ The ⚡ Static Site ⚡ Handler 🤚 is a special type of DNN Extension that ins
 
 This module was built specifically to allow DocFX to be hosted inside of a DNN Site as intranet documentation for internal tools at [Redacted] ✔.
 
-# Build
-
 # Getting Started
 Before you can begin you need to update all of your routes in your static website to have the extension `.axd`, this is **VERY** important or nothing will work. Only update the references in your files, not the actual file extensions themselves.
 
