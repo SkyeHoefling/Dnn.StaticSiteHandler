@@ -9,6 +9,18 @@ This module was built specifically to allow DocFX to be hosted inside of a DNN S
 # Build
 
 # Getting Started
+Before you can begin you need to update all of your routes in your static website to have the extension `.axd`, this is **VERY** important or nothing will work. Only update the references in your files, not the actual file extensions themselves.
+
+Example of index.html
+```
+<a href="/second-page.html.axd">Second Page</a>
+```
+In this example the actual page is still `index.html`, once DNN secures the file it will be `index.html.resources`
+
+## Upload Files to DNN
+Once you have all of the routes configured, you will need to upload your static site to DNN. For this to work correctly you will need to create a secured folder in DNN. The secured folder and files in DNN locks all the files down so IIS will not serve the content. This will require all content to be routed through the ⚡🤚, which will handle permissions for you.
+
+After securing your files just set the top level folder permission and you will be good to go!
 
 
 # Supports DNN (Formerly DotNetNuke)
