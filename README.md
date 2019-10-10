@@ -6,6 +6,17 @@ The ⚡ Static Site ⚡ Handler 🤚 is a special type of DNN Extension that ins
 
 This module was built specifically to allow DocFX to be hosted inside of a DNN Site as intranet documentation for internal tools at [Redacted] ✔.
 
+# Build
+
+# Getting Started
+
+
+# Supports DNN (Formerly DotNetNuke)⚡🤚 was originally built for DNN 9.4 but does not leverage any new 9.x or 9.4.x features. The extension should work on any version of DNN that support HTTP Handlers. Below is a table of versions of DNN that it has been tested on and confirmed working
+
+| ⚡ Static Site ⚡ Handler 🤚 | DNN (DotNetNuke) | Supported |
+|-------------------------------|------------------|-----------|
+| 1.0.0                         | 9.4.1            | Yes       |
+
 # Changes to DNN
 This module makes minor changes to the DNN web.config and adds a new assembly to the directory. Below documents what changes are going to occur to your DNN site so you can make approprate decisions on installing this
 
