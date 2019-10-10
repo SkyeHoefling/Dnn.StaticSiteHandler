@@ -10,9 +10,9 @@
         <url>http://www.andrewhoefling.com</url>
         <email>andrew@hoefling.me</email>
       </owner>
-      
-      <license>sample</license>
-      <releaseNotes>sample</releaseNotes>
+
+      <license src="LICENSE" />
+      <releaseNotes src="ReleaseNotes.md" />
       <azureCompatible>true</azureCompatible>
 
       <components>

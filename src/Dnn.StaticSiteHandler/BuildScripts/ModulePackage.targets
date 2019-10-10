@@ -11,6 +11,7 @@
     <Extension>zip</Extension>
     <DNNFileName>../Dnn.StaticSiteHandler</DNNFileName>
     <MSBuildDnnBinPath>$(MSBuildProjectDirectory)\..\bin\Release\net472</MSBuildDnnBinPath>
+    <RootDir>$(MSBuildProjectDirectory)\..\..\..\</RootDir>
   </PropertyGroup>
 
   <Target Name="PackageModule" Condition=" '$(Configuration)' == 'Release' ">
@@ -93,7 +94,8 @@
     <Copy SourceFiles="$(MSBuildDnnBinPath)\$(AssemblyName).dll" DestinationFolder="$(MSBuildProjectDirectory)\Package\bin"/>
     <Copy SourceFiles="@(SqlDataProviderFiles)" DestinationFolder="$(MSBuildProjectDirectory)\Package\%(RecursiveDir)" />
     <Copy SourceFiles="@(PackageManifestFiles)" DestinationFolder="$(MSBuildProjectDirectory)\Package" />
-    <Copy SourceFiles="@(ManifestAssetFiles)" DestinationFolder="$(MSBuildProjectDirectory)\Package\%(RecursiveDir)" />
+    <Copy SourceFiles="$(RootDir)LICENSE" DestinationFolder="$(MSBuildProjectDirectory)\Package" />
+    <Copy SourceFiles="$(RootDir)ReleaseNotes.md" DestinationFolder="$(MSBuildProjectDirectory)\Package" />
     
     <CreateItem Include="$(MSBuildProjectDirectory)\Package\**\*.*">
       <Output TaskParameter="Include" ItemName="OutputContent" />
