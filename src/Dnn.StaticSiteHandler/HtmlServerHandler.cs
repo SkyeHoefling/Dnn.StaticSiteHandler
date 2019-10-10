@@ -23,31 +23,10 @@ namespace Dnn.StaticSiteHandler
             }
 
             var extension = path.Replace(".axd", string.Empty).Split('.').LastOrDefault();
-            switch(extension)
-            {
-                case "html":
-                    context.Response.ContentType = "text/html";
-                    break;
-                case "js":
-                    context.Response.ContentType = "text/javascript";
-                    break;
-                case "css":
-                    context.Response.ContentType = "text/css";
-                    break;
-                case "svg":
-                    context.Response.ContentType = "image/svg+xml";
-                    break;
-                case "woff":
-                    context.Response.ContentType = "aplication/font-woff";//"font/woff";
-                    break;
-                case "woff2":
-                    context.Response.ContentType = "application/font-woff2";//"font/woff2";
-                    break;
-                case "ttf":
-                    context.Response.ContentType = "application/font-ttf";//"font/ttf";
-                    break;
-            }
-
+            var manager = new ContentTypeManager();
+            var contentType = manager.GetContentType(extension);
+            if (!string.IsNullOrEmpty(contentType))
+                context.Response.ContentType = contentType;
         }
     }
 }
