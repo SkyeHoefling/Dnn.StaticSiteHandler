@@ -58,3 +58,7 @@ In the root directory the generated zip file will be in the following folder
 ```
 D:\Dnn.StaticSiteHandler\Module_Installers>
 ```
+
+# Created By Andrew Hoefling
+* Twitter: [@andrew_hoefling](https://twitter.com/andrew_hoefling)
+* Website: [andrewhoefling.com](https://www.andrewhoefling.com)
