@@ -2,12 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
+    <Authors>Andrew Hoefling</Authors>
+    <Company>Andrew Hoefling</Company>
+    <Product>⚡ Static Site ⚡ Handler 🤚</Product>
+    <Description>A Static Site Handler that secures HTML websites inside secured DNN folders using the DNN Permission system.</Description>
+    <Copyright>Andrew Hoefling © 2019</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="DotNetNuke.Core" Version="9.4.1" />
   </ItemGroup>
-  
+      
   <ItemGroup>
     <Reference Include="System.Web" />
   </ItemGroup>

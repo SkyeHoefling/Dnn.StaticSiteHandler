@@ -1,6 +1,6 @@
 ﻿<dotnetnuke type="Package" version="8.0">
   <packages>
-    <package name="Dnn.StaticSiteHandler" type="Provider" version="00.00.01">
+    <package name="Dnn.StaticSiteHandler" type="Provider" version="1.0.0">
       <friendlyName>⚡ Static Site ⚡ Handler 🤚</friendlyName>
       <description>A Static Site Handler that secures HTML websites inside secured DNN folders using the DNN Permission system.</description>
 
