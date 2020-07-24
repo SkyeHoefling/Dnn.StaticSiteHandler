@@ -20,6 +20,20 @@
                     return "application/font-woff2";//"font/woff2";
                 case "ttf":
                     return "application/font-ttf";//"font/ttf";
+                case "jpg":
+                case "jpeg":
+                    return "image/jpeg";
+                case "png":
+                    return "image/png";
+                case "gif":
+                    return "image/gif";
+                case "tiff":
+                    return "image/tiff";
+                case "webp":
+                    return "image/webp";
+                case "bmp":
+                    return "image/bmp";
+
             }
 
             return string.Empty;

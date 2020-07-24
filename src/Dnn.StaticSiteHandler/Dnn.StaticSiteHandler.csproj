@@ -7,6 +7,8 @@
     <Product>⚡ Static Site ⚡ Handler 🤚</Product>
     <Description>A Static Site Handler that secures HTML websites inside secured DNN folders using the DNN Permission system.</Description>
     <Copyright>Andrew Hoefling © 2019</Copyright>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

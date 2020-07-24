@@ -37,18 +37,39 @@ namespace Dnn.StaticSiteHandler
             var filePath = path.Replace(".axd", ".resources");
             var fullFile = context.Server.MapPath($"~/{filePath}");
 
-            using (FileStream fileStream = File.OpenRead(fullFile))
-            using (var streamReader = new StreamReader(fileStream))
-            {
-                var content = streamReader.ReadToEnd();
-                context.Response.Write(content);
-            }
-
             var extension = path.Replace(".axd", string.Empty).Split('.').LastOrDefault();
             var manager = new ContentTypeManager();
             var contentType = manager.GetContentType(extension);
             if (!string.IsNullOrEmpty(contentType))
                 context.Response.ContentType = contentType;
+
+            using (FileStream fileStream = File.OpenRead(fullFile))
+            {
+                if (extension == "jpeg" || extension == "jpg" || extension == "png" ||
+                    extension == "gif" || extension == "tiff" || extension == "webp" ||
+                    extension == "bmp")
+                    HandleImageResponse(fileStream);
+                else
+                    HandleStandardResponse(fileStream);
+            }
+
+            void HandleImageResponse(Stream stream)
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+                    stream.CopyTo(memoryStream);
+                    context.Response.BinaryWrite(memoryStream.ToArray());
+                }
+            }
+
+            void HandleStandardResponse(Stream stream)
+            {
+                using (var streamReader = new StreamReader(stream))
+                {
+                    var content = streamReader.ReadToEnd();
+                    context.Response.Write(content);
+                }
+            }
         }
     }
 }

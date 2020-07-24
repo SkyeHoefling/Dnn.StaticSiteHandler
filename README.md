@@ -27,6 +27,7 @@ After securing your files just set the top level folder permission and you will 
 | ⚡ Static Site ⚡ Handler 🤚 | DNN (DotNetNuke) | Supported |
 |-------------------------------|------------------|-----------|
 | 1.0.0                         | 9.4.1            | Yes       |
+| 1.0.1                         | 9.4.1            | Yes       |
 
 # Changes to DNN
 This module makes minor changes to the DNN web.config and adds a new assembly to the directory. Below documents what changes are going to occur to your DNN site so you can make approprate decisions on installing this
@@ -38,6 +39,13 @@ This module makes minor changes to the DNN web.config and adds a new assembly to
   * SVG Files
   * Font Files
   * CSS Files
+  * Image Files
+    * jpeg/jpg
+    * png
+    * gif
+    * tiff
+    * webp
+    * bmp
 
 # Create Module Installer
 
